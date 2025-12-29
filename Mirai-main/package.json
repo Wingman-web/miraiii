@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "git lfs install --local && git lfs pull --all || true && node ./scripts/write-env.js",
+    "prebuild": "git lfs install --local && git lfs pull || true && node ./scripts/write-env.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
