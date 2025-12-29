@@ -107,6 +107,7 @@ const MiraiPodsIntro: React.FC = () => {
             alt="Background shape"
             width={760}
             height={600}
+            unoptimized
             className="w-full h-auto drop-shadow-[0_10px_300px_rgba(0,0,0,0.1)]"
             priority
           />

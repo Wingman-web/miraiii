@@ -93,6 +93,7 @@ export default function ClubhouseIntro() {
           alt="About mirai shape"
           width={760}
           height={400}
+          unoptimized
           className="w-full h-auto drop-shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
           priority={false}
         />
