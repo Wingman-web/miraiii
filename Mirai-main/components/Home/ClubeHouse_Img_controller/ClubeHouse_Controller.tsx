@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-const shapeTwoPath = '/images/shape-two.png';
+const shapeTwoPath = '/images/shape-two-pods.png';
 
 interface Amenity {
   name: string;
@@ -101,7 +101,7 @@ export default function MiraiClubhouse() {
           <div className="absolute inset-0 pointer-events-none z-5 overflow-hidden">
           <div className="absolute right-[-20%] -top-2 w-[160vw] md:w-[150vw] lg:w-[140vw]">
               <Image
-                src={ShapeTwo}
+                src={shapeTwoPath}
                 alt="Background shape"
                 width={7200}
                 height={5400}

@@ -305,7 +305,7 @@ export default function MiraiPodsSlider() {
 
       {/* Decorative shape scoped to the component: centered and scaled so full image is visible */}
       <img
-        src={ShapeTwo.src}
+        src={SHAPE_TWO_PODS}
         alt=""
         aria-hidden="true"
         className="absolute -top-2 left-1/2 -translate-x-1/2 w-screen max-w-1250 md:max-w-1050 lg:max-w-1250 max-h-screen h-auto object-contain pointer-events-none select-none z-0 opacity-100 drop-shadow-2xl"
