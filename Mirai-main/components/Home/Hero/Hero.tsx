@@ -85,7 +85,7 @@ const Hero = () => {
           <div style={{ height: '1px', background: '#fff', opacity: 0.9, flex: 1 }} />
 
           <div style={{ padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Image src={HERO_LOGO} alt="Mirai logo" width={240} height={88} style={{ height: 'auto', display: 'block' }} priority />
+            <Image src={HERO_LOGO} alt="Mirai logo" width={240} height={88} style={{ height: 'auto', display: 'block' }} priority unoptimized />
           </div>
 
           <div style={{ height: '1px', background: '#fff', opacity: 0.9, flex: 1 }} />

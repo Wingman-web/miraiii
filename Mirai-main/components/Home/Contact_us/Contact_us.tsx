@@ -69,6 +69,7 @@ export default function ContactForm() {
             alt="Day view"
             fill
             priority
+            unoptimized
             className="object-cover object-center"
           />
         </div>

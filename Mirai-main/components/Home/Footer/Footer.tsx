@@ -92,6 +92,7 @@ export default function Footer() {
                 height={48}
                 className="w-auto h-auto max-w-50 lg:max-w-60 drop-shadow-md block"
                 priority
+                unoptimized
                 onError={() => setShowFallbackLogo(true)}
                 style={{ filter: 'none' }}
               />
