@@ -1,3 +1,5 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
 components/Home/Hero/mirai_home1.mov filter=lfs diff=lfs merge=lfs -text
 public/videos/mirai_home1.mov filter=lfs diff=lfs merge=lfs -text
+# Keep other large media in LFS, but store UI images in the repo so build systems receive real binaries
+public/images/* -filter -diff -merge -text
