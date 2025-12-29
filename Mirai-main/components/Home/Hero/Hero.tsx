@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from 'react'
 import Image from 'next/image'
-import heroLogo from './logo_1.png'
+const HERO_LOGO = '/images/logo_1.png'
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null)
@@ -85,7 +85,7 @@ const Hero = () => {
           <div style={{ height: '1px', background: '#fff', opacity: 0.9, flex: 1 }} />
 
           <div style={{ padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Image src={heroLogo} alt="Mirai logo" width={240} height={88} style={{ height: 'auto', display: 'block' }} priority />
+            <Image src={HERO_LOGO} alt="Mirai logo" width={240} height={88} style={{ height: 'auto', display: 'block' }} priority />
           </div>
 
           <div style={{ height: '1px', background: '#fff', opacity: 0.9, flex: 1 }} />

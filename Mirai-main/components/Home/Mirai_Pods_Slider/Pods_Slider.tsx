@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import SkyPodsImg from './Sky_Pods.png';
-import TerraImg from './terra.png';
-import AquaImg from './aqua.png';
-import AviaImg from './avia.png';
-import PyroImg from './pyro.png';
-import ShapeTwo from './shape-two.png';
+const SKY_PODS = '/images/Sky_Pods.png';
+const TERRA_IMG = '/images/terra.png';
+const AQUA_IMG = '/images/aqua.png';
+const AVIA_IMG = '/images/avia.png';
+const PYRO_IMG = '/images/pyro.png';
+const SHAPE_TWO_PODS = '/images/shape-two-pods.png';
 
 interface Slide {
   id: number;
@@ -18,35 +18,35 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 0,
-    image: SkyPodsImg.src,
+    image: SKY_PODS,
     label: 'Sky Pods',
     title: 'An Elemental Rooftop\nwith Four Sky Pods'
   },
 
   {
     id: 1,
-    image: TerraImg.src,
+    image: TERRA_IMG,
     label: 'Terra Pod',
     title: 'Here, Stories\nGrow Roots'
   },
 
   {
     id: 2,
-    image: AquaImg.src,
+    image: AQUA_IMG,
     label: 'Aqua Pod',
     title: 'Where Water\nMeets Wonder'
   },
 
   {
     id: 3,
-    image: PyroImg.src,
+    image: PYRO_IMG,
     label: 'Pyro Pod',
     title: 'Ignite Your\nPassion'
   },
 
   {
     id: 4,
-    image: AviaImg.src,
+    image: AVIA_IMG,
     label: 'Avia Pod',
     title: 'Soaring Above\nthe Ordinary'
   }

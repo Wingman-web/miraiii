@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ShapeTwo from '../Mirai_Pods_Slider/shape-two.png';
+const shapeTwoPath = '/images/shape-two.png';
 
 interface Amenity {
   name: string;

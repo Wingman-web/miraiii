@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import NightViewImg from './night_view.png';
-import footerLogo from './footer_logo.png';
-import helperLogo from '../../Helper/logo.png';
+const nightViewPath = '/images/night_view.png';
+const footerLogoPath = '/images/footer_logo.png';
+const helperLogoPath = '/images/logo.png';
 
 export default function Footer() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -61,7 +61,7 @@ export default function Footer() {
       {/* Background image (positioned behind content) */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src={NightViewImg}
+          src={nightViewPath}
           alt="Night view"
           fill
           priority
@@ -86,7 +86,7 @@ export default function Footer() {
             {/* Logo */}
             <div className={`mb-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <Image
-                src={showFallbackLogo ? helperLogo : footerLogo}
+                src={showFallbackLogo ? helperLogoPath : footerLogoPath}
                 alt={showFallbackLogo ? 'Fallback logo' : 'Mirai Footer Logo'}
                 width={160}
                 height={48}

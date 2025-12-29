@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import DayViewImg from './day_view.png';
+const dayViewPath = '/images/day_view.png';
 
 export default function ContactForm() {
   const [bgLoaded, setBgLoaded] = useState(false);
@@ -15,7 +15,7 @@ export default function ContactForm() {
       setBgLoaded(true);
       setBgError(true);
     };
-    img.src = DayViewImg.src;
+    img.src = dayViewPath;
     return () => {
       img.onload = null;
       img.onerror = null;
@@ -65,7 +65,7 @@ export default function ContactForm() {
       {!bgError && (
         <div className="absolute inset-0 -z-10">
           <Image
-            src={DayViewImg}
+            src={dayViewPath}
             alt="Day view"
             fill
             priority

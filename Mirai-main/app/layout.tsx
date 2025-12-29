@@ -23,7 +23,7 @@ const century = localFont({
 import NavContainer from "@/components/Home/Navbar/NavContainer";
 import LoadingOverlay from '@/components/Common/LoadingOverlay';
 import SafeDomPatches from '@/components/Common/SafeDomPatches';
-import logoImg from "../components/Helper/logo.png";
+
 
 // Using system font 'Century Gothic' instead of Geist.
 

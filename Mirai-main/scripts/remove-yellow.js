@@ -10,8 +10,8 @@ function colorDistance(r1,g1,b1, r2,g2,b2) {
 }
 
 async function removeYellow() {
-  const src = path.join(__dirname, '../components/Helper/logo.png')
-  const out = path.join(__dirname, '../components/Helper/logo-transparent.png')
+  const src = path.join(__dirname, '../public/images/logo.png')
+  const out = path.join(__dirname, '../public/images/logo-transparent.png')
 
   const data = fs.readFileSync(src)
   const png = PNG.sync.read(data)

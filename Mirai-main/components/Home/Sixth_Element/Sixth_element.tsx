@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from 'react'
-import bg from '../Hero/sixth_ment.png'
+const bgPath = '/images/sixth_ment.png'
 
 export default function SixthElement() {
   const sectionRef = useRef<HTMLDivElement | null>(null)
@@ -38,7 +38,7 @@ export default function SixthElement() {
     >
       {/* Background Image */}
       <img
-        src={bg.src}
+        src={bgPath}
         alt=""
         style={{
           width: '100%',
